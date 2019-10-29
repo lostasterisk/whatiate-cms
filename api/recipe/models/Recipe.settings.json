@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "recipes",
+  "info": {
+    "name": "recipe",
+    "description": "each recipe video's information."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "published": {
+      "type": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rating": {
+      "enum": [
+        "tasty",
+        "notgood",
+        "notbad",
+        "distasteful"
+      ],
+      "type": "enumeration"
+    },
+    "macros": {
+      "type": "json"
+    },
+    "micros": {
+      "type": "json"
+    },
+    "videoURL": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "ingredients": {
+      "type": "json"
+    }
+  }
+}
