@@ -39,6 +39,15 @@
       "collection": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "rating": {
+      "enum": [
+        "tasty",
+        "notgood",
+        "notbad",
+        "distasteful"
+      ],
+      "type": "enumeration"
     }
   }
 }
