@@ -1,9 +1,9 @@
 {
   "connection": "default",
-  "collectionName": "recipes",
+  "collectionName": "reciptes",
   "info": {
     "name": "recipe",
-    "description": ""
+    "description": "the core of whatiate"
   },
   "options": {
     "increments": true,
@@ -17,14 +17,14 @@
     "published": {
       "type": "date"
     },
-    "rating": {
-      "enum": [
-        "tasty",
-        "notbad",
-        "notgood",
-        "distasteful"
-      ],
-      "type": "enumeration"
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "ingredients": {
+      "type": "json"
     },
     "macros": {
       "type": "json"
@@ -32,19 +32,13 @@
     "micros": {
       "type": "json"
     },
-    "description": {
-      "type": "text"
-    },
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
     "video": {
       "type": "string"
     },
-    "ingredients": {
-      "type": "json"
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }
