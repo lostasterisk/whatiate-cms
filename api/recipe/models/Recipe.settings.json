@@ -3,7 +3,7 @@
   "collectionName": "recipes",
   "info": {
     "name": "recipe",
-    "description": "each recipe video's information."
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,14 +17,11 @@
     "published": {
       "type": "date"
     },
-    "description": {
-      "type": "string"
-    },
     "rating": {
       "enum": [
         "tasty",
-        "notgood",
         "notbad",
+        "notgood",
         "distasteful"
       ],
       "type": "enumeration"
@@ -35,13 +32,16 @@
     "micros": {
       "type": "json"
     },
-    "videoURL": {
-      "type": "string"
+    "description": {
+      "type": "text"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "video": {
+      "type": "string"
     },
     "ingredients": {
       "type": "json"
