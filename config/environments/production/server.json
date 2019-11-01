@@ -1,5 +1,5 @@
 {
-  "host": "localhost",
+  "host": "ate.bysimeon.com",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
@@ -12,6 +12,7 @@
     "enabled": false
   },
   "admin": {
+    "path": "/dash"
     "autoOpen": false
   }
 }
