@@ -1,5 +1,5 @@
 {
-  "host": "ate.bysimeon.com",
+  "host": "bb.bysimeon.com",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
@@ -12,7 +12,7 @@
     "enabled": false
   },
   "admin": {
-    "path": "/dash"
+    "path": "/dash",
     "autoOpen": false
   }
 }
