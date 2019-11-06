@@ -42,10 +42,13 @@
     },
     "rating": {
       "enum": [
+        "bestof",
+        "amazing",
         "tasty",
         "notgood",
         "notbad",
-        "distasteful"
+        "distasteful",
+        "neveragain"
       ],
       "type": "enumeration"
     }
